@@ -1,0 +1,288 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css";
+
+
+body,html{
+  color: #f7ad0a;
+height:100%;
+font-family: "Happy Monkey";
+background-color:#4D255A;
+text-align: center;
+
+
+}
+
+/* navbar css */
+.navbar {
+  background: #824F92;
+  font-size: 1.3em;
+  height:70px;
+  text-decoration: underline;
+
+}
+
+
+#brand{
+   width:70px;
+   height:auto;
+}
+#gram{
+  width:40px;
+  height:auto;
+}
+.navLinkColor{
+  color:#f7ad0a !important;
+}
+
+
+/* change the burger color */
+.custom-toggler .navbar-toggler{
+  border:15px solid #f7ad0a;
+}
+
+.navbar-collapse{
+  background-color: #824F92;/*change dropdown menu background color*/
+  border-radius: 25px;
+}
+/* end burger change */
+
+
+
+/* end navbar */
+
+
+
+.homepage{
+  margin-top:4.4em;
+  color:#f7ad0a;
+  text-align: center;
+
+
+  background-image: url('../erikakesPics/Flowers.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:top center ;
+}
+.container{
+  margin-bottom: 1em;
+  margin-top:1em;
+}
+
+#slogan{
+  font-weight: bolder;
+  font-size: 4em;
+  text-shadow: 2px 2px black;
+
+}
+#phone{
+  font-size:2.5em;
+  font-weight: bolder;
+  text-shadow: 3px 3px black;
+}
+
+.quote{
+  background-color:#824F92;
+  margin-left:20%;
+  margin-right:20%;
+  border-radius: 30px;
+}
+#aboutUs{
+  font-size:1.5em;
+  /* margin-bottom:1em; */
+
+}
+
+hr{
+  border:1px solid orange;
+  width:75%;
+  margin-bottom:2em;
+}
+
+.gallery{
+  margin-top:2em;
+
+}
+.galleryRow{
+  margin-bottom:1em;
+
+}
+.pics{
+  height:250px;
+  object-fit: cover; /*that zoomed look*/
+  width:100%;
+}
+
+
+
+
+
+.img-thumbnail{
+  border:0;
+  background:#f7ad0a;
+}
+
+.galleryText{
+  width:100%;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#flavors{
+  background-image: url(../erikakesPics/chocCake1.jpg);
+  height:150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+
+}
+#frostings{
+  background-image: url(../erikakesPics/chocfrost.jpg);
+  height:150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.TableHead{
+  text-decoration: underline;
+}
+.TableRow{
+  margin:auto;
+  width:100%;
+  text-align: center;
+  border:1px solid #824F92;
+  border-radius: 10px;
+
+}
+.TableRow.light{
+  background-color: #824F92;
+  border-radius: 10px;
+  border:1px solid #4D255A;
+}
+.TableRow h5{
+  font-size: 1.3em;
+  line-height:50px;
+}
+label{
+  font-size:1.5em;
+  text-align: left;
+
+  float:left;
+}
+input{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.form-group{
+  width:80%;
+  margin:auto;
+  margin-bottom:2em;
+
+}
+#submit{
+
+   background:#824F92;
+   color:#f7ad0a;
+  font-size:1.3em;
+  line-height:1.3em;
+}
+
+.tog{
+  border-radius: 15px;
+  background:#4D255A;
+}
+
+
+
+/* adjust carousel  and big image height based on screen size */
+@media (max-width: 576px)
+{
+  #weddingRow{
+    height:120px;
+  }
+  #weddingBigImg{
+    height:300px !important;
+  }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px)
+{
+  #weddingRow{
+    height:150px;
+  }
+  #weddingBigImg{
+    height:360px !important;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+  #weddingRow{
+    height:200px;
+  }
+  #weddingBigImg{
+    height:420px !important;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px)
+{
+  #weddingRow{
+    height:250px;
+  }
+  #weddingBigImg{
+    height:510px !important;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
+  #weddingRow{
+    height:300px;
+  }
+
+}
+
+#weddingBigImg{
+  border-radius: 5%;
+}
+.carousel-item img{
+  height:100%;
+  /* object-fit:cover; */
+  object-position:center;
+  border-radius:25px;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  width:8% !important;
+}
